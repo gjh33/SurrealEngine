@@ -30,7 +30,7 @@ type BaseWindow struct {
 	WindowEventsDispatcher
 }
 
-// CurrentSettings implements the Window interface. Returns the window's live settings.
+// ActiveSettings implements the Window interface. Returns the window's live settings.
 func (window *BaseWindow) ActiveSettings() WindowSettings {
 	return window.WindowSettings
 }
