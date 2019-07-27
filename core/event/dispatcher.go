@@ -19,12 +19,12 @@ type UnknownSubscriberError struct{}
 
 // Error implements the error interface
 func (err *UnknownSubscriberError) Error() string {
-	return "Unknown Subscriber: An unsupported interface tried to subscribe to this dispatcher. Check the dispatcher implementation to see valid listener interfaces"
+	return "Subscriber does not match any events"
 }
 
 // UnknownEventError should be thrown if the struct trying to be dispatched is not recognized as a valid event type
 type UnknownEventError struct{}
 
 func (err *UnknownEventError) Error() string {
-	return "Unkown Event: An unsupported type tried to be fired as event data to this dispatcher. Check the dispatcher implementation to see valid event data struct"
+	return "Event unsupported by dispatcher"
 }

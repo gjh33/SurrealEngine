@@ -86,7 +86,7 @@ type ApplicationStartupListener interface {
 }
 
 // ApplicationInitializedEvent is the event called after initialization. It is called just before the first update loop.
-// Graphics libraries will be initialized
+// graphics libraries will be initialized
 type ApplicationInitializedEvent struct{}
 
 // ApplicationInitializedListener defines the subscriber interface for the ApplicationInitializedEvent
